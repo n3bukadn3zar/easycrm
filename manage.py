@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!~/n3bukadn3zar/django-projects/venv-easycrm/bin/python
 import os
 import sys
 
