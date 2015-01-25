@@ -17,7 +17,7 @@ def subscriber_new(request, template='subscribers/subscriber_new.html'):
             last_name = form.cleaned_data['last_name']
             # Create the User record
             user = User(username=username, email=email,
-                        frist_name=first_name, lastname=last_name)
+                        first_name=first_name, last_name=last_name)
             user = User(username=username, email=email)
             user.set_password(password)
             user.save()
