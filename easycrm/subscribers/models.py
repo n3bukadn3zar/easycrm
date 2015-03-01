@@ -38,7 +38,7 @@ class Subscriber(models.Model):
 
         # Charge the Customer instead of the card
         stripe.Charge.create(
-            amount=dee, # in cents
+            amount=fee, # in cents
             currency="usd",
             customer=stripe_customer.id
         )

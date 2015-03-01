@@ -2,9 +2,9 @@ from django.shortcuts import render
 from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
 from django.contrib.auth import authenticate, login
-from django.form.forms import NON_FIELD_ERRORS
+from django.forms.forms import NON_FIELD_ERRORS
 from django.conf import settings
-form django.core.urlresolvers import reverse
+from django.core.urlresolvers import reverse
 
 from .forms import SubscriberForm
 from .models import Subscriber
