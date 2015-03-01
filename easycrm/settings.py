@@ -53,6 +53,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'easycrm.marketing',
     'easycrm.subscribers',
+    'easycrm.accounts',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -134,3 +135,5 @@ STRIPE_PUBLISHABLE_KEY = get_env_variable('STRIPE_PUBLISHABLE_KEY')
 
 # Current Subscription Price
 SUBSCRIPTION_PRICE = 1500
+
+LOGIN_REDIRECT_URL = '/account/list/'

@@ -20,7 +20,7 @@ urlpatterns = patterns('',
 
     # Login/Logout URLs
     (r'^login/$',
-        'dnago.contrib.auth.views.login', {'template_name': 'login.html'}
+        'django.contrib.auth.views.login', {'template_name': 'login.html'}
     ),
 
     (r'^logout/$',
